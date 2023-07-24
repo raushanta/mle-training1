@@ -1,2 +1,23 @@
 {
+    "python.autoComplete.extraPaths": [],
+    "python.analysis.extraPaths": [],
+    "python.pythonPath": "~\\Miniconda3\\envs\\mle-dev\\python.exe",
+    "python.formatting.provider": "none",
+    "python.formatting.blackArgs": [
+        "--line-length=90"
+    ],
+    "python.linting.flake8Args": [
+        "--max-line-length=90"
+    ],
+    "python.isorts.args": [
+        "--profile",
+        "black"
+    ],
+    "files.trimTrailingWhitespace": true,
+    "python.linting.flake8Enabled": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
 }
