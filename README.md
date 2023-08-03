@@ -1,7 +1,6 @@
-1. Download the pyhton file from the given link. https://drive.google.com/drive/folders/1ebqWUF06mkLRpmV-AjAjPMYgmh0cuUvX
-2. Setup the environment for Anaconda Prompt.
-``` conda create --name mle-dev ```
-3. Activate the mle-dev environment. ``` conda activate mle-dev ```
-4. Install the required libraries (pandas, numpy, matplotlib, scikit-learn,scipy). ```conda install numpy pandas matplotlib scikit-learn scipy```
-5. Run the command python file in anaconda prompt .```python nonstandardcode.py``` 
-6. Export environment file as env.yml. ```conda export > env.yml```
+1. create a src folder and inside that create a folder ```mle_training1_raushanta``` and inside this folder paste all the python files.
+2. ```__init__.py``` file is also required make a empty file.
+3. Build the distribution folder and run the command ```python -m build```.
+4. Upload the distribution archives by running command ```python -m twine upload --repository testpypi dist/*```.
+5. Install the package by running the command ```py -m pip install --index-url https://test.pypi.org/simple/ --no-deps mle_training1_raushanta```
+6. Now you are ready to use your own library.
